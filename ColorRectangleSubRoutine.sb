@@ -1,0 +1,28 @@
+TextWindow.WriteLine("This program will open a graphics window and allow you to choose the color of a rectangle to draw")
+ColorShape()
+Sub ColorShape
+  Start:
+  TextWindow.WriteLine("Please enter a Red, Blue, Yellow or Green: ")
+  ShapeColor = TextWindow.Read()
+  If ShapeColor = "Red" Then 
+  GraphicsWindow.BackgroundColor = "Purple"
+  GraphicsWindow.BrushColor = "Red"
+  GraphicsWindow.FillRectangle(150, 150, 200, 100)
+ElseIf ShapeColor = "Blue" Then
+  GraphicsWindow.BackgroundColor = "Purple"
+  GraphicsWindow.BrushColor = "Blue"
+  GraphicsWindow.FillRectangle(150, 150, 200, 100)
+ElseIf ShapeColor = "Yellow" Then
+  GraphicsWindow.BackgroundColor = "Purple"
+  GraphicsWindow.BrushColor = "Yellow"
+  GraphicsWindow.FillRectangle(150, 150, 200, 100)
+ElseIf ShapeColor = "Green" Then
+  GraphicsWindow.BackgroundColor = "Purple"
+  GraphicsWindow.BrushColor = "Green"
+  GraphicsWindow.FillRectangle(150, 150, 200, 100)
+Else
+  TextWindow.Write("Please enter a Red, Blue, Yellow or Green: ")
+  Goto Start
+EndIf
+EndSub
+  

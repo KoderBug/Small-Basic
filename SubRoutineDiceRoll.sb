@@ -1,0 +1,20 @@
+TextWindow.WriteLine("Play Roll the Die") 'Dice rolling simulation
+TextWindow.WriteLine("Please enter a number between 1 and 6") ' User enters number from a die
+FirstRoll = TextWindow.Read() '  First number is saved
+TextWindow.WriteLine("Please enter another number between 1 and 6") 'User enters a second number from a die
+SecondRoll = TextWindow.Read() 'Second number is saved
+TotalRoll = FirstRoll + SecondRoll 'Add first number & second number
+TextWindow.WriteLine("Your total roll was " + TotalRoll) 'Write total on the screen
+TextWindow.WriteLine("Let's see if you beat the computer")
+RandomRoll() ' Call subroutine for computer to roll dice
+If TotalDie > TotalRoll then ' compare computer roll to user roll
+TextWindow.WriteLine("Bummer the computer won :-(") 'Print this to screen if computer won
+Else
+TextWindow.WriteLine("Congratulations! You won!") 'Print this to screen if user won
+Endif
+Sub RandomRoll 'Begin sub routine
+  FirstDie = Math.GetRandomNumber(6) 'Use Math function to get random number less than 6
+  SecondDie = Math.GetRandomNumber(6)'Use Math function to get another random number less than 6
+  TotalDie = FirstDie + SecondDie 'Add randon numbers together
+  TextWindow.WriteLine("The computer rolled " + TotalDie) 'Print total that computer rolled
+EndSub 'End sub routine

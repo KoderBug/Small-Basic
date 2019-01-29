@@ -1,0 +1,11 @@
+GraphicsWindow.Height = 400
+GraphicsWindow.Width = 400
+Turtle.X = 150
+Turtle.Y = 250
+GraphicsWindow.BackgroundColor = "Crimson"
+GraphicsWindow.PenColor = "Yellow"
+For X = 1 To 4
+  Turtle.Move(100)
+  Turtle.Turn(90)
+EndFor
+  

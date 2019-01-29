@@ -1,0 +1,10 @@
+TextWindow.Title = "Favorite Coffee Drink"
+TextWindow.Top = 35
+TextWindow.WriteLine("What is your favorite coffee drink?")
+coffeeDrink = TextWindow.Read()
+TextWindow.WriteLine("Your favorite coffee drink is a " + coffeeDrink + " Delish")
+TextWindow.Top = 900
+TextWindow.WriteLine("What is your favorite pastry?")
+pastry = TextWindow.Read()
+TextWindow.Top = 500
+TextWindow.WriteLine("Your favorite pastry is a " + pastry + " Yummmmmm")

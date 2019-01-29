@@ -1,0 +1,49 @@
+Turtle.Show()
+Program.Delay(5000)
+Turtle.X = 100
+Turtle.Y = 180
+Sides = 200
+Angle = 360 / Sides
+Size = 1000 / Sides
+For A = 1 To Sides
+  Turtle.Move(Size)
+  Turtle.Turn(Angle)
+EndFor
+Turtle.PenUp()
+Turtle.MoveTo(340, 200)
+Turtle.TurnRight()
+Turtle.PenDown()
+For A = 1 To 83
+  Turtle.Move(3)
+  Turtle.Turn(2)
+EndFor
+Turtle.PenUp()
+Turtle.MoveTo(275, 120)
+Turtle.PenDown()
+For A = 1 To 4
+  Turtle.Move(10)
+  Turtle.Turn(87)
+endfor
+Turtle.PenUp()
+Turtle.MoveTo(200, 120)
+Turtle.PenDown()
+Turtle.TurnLeft()
+For A = 1 To 4
+  Turtle.Move(10)
+  Turtle.Turn(87)
+endfor
+Turtle.PenUp()
+Turtle.MoveTo(237, 160)
+Turtle.PenDown()
+For A = 1 To 4
+  Turtle.Move(10)
+  Turtle.Turn(87)
+endfor
+Turtle.PenUp()
+Turtle.TurnLeft()
+Turtle.Move(100)
+Turtle.TurnRight()
+Turtle.Move(200)
+
+
+

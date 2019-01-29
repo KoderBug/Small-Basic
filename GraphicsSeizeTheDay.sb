@@ -1,0 +1,31 @@
+GraphicsWindow.Height = 700
+GraphicsWindow.Width = 400
+For A = 40 To 90
+  GraphicsWindow.DrawLine(200, 350, 20, A + 2)
+  GraphicsWindow.PenColor = "Blue"
+  GraphicsWindow.DrawLine(200, 350, 350, A + 2)
+  GraphicsWindow.PenColor = "Red" 
+EndFor
+For A = 180 To 240
+  GraphicsWindow.PenWidth = 10
+  GraphicsWindow.DrawLine(200, 350, A + 2, 40)
+  GraphicsWindow.PenColor = "Green"
+Endfor
+GraphicsWindow.SetPixel(80, 500, "Red")
+GraphicsWindow.SetPixel(81, 500, "Red")
+GraphicsWindow.SetPixel(82, 500, "Red")
+GraphicsWindow.SetPixel(83, 500, "Black")
+GraphicsWindow.SetPixel(84, 500, "Black")
+GraphicsWindow.SetPixel(85, 500, "Black")
+GraphicsWindow.FontName = "Arial"
+GraphicsWindow.FontSize = 25 
+GraphicsWindow.FontItalic = "False"
+GraphicsWindow.DrawBoundText(80, 375, 350, "Seize")
+GraphicsWindow.FontName = "Georgia"
+GraphicsWindow.FontSize = 10 
+GraphicsWindow.FontItalic = "True"
+GraphicsWindow.DrawBoundText(180, 375, 350, " the")
+GraphicsWindow.FontName = "Courier New"
+GraphicsWindow.FontSize = 40 
+GraphicsWindow.FontItalic = "True"
+GraphicsWindow.DrawBoundText(200, 375, 350, " Day")

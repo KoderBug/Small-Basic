@@ -1,0 +1,38 @@
+GraphicsWindow.Title = "Mouse Graphics"
+GraphicsWindow.Width = "700"
+GraphicsWindow.Height = "600"
+GraphicsWindow.KeyDown = OnKeyDown
+GraphicsWindow.KeyUp = OnKeyUp
+GraphicsWindow.MouseDown = OnMouseDown
+GraphicsWindow.MouseUp = OnMouseUp
+GraphicsWindow.MouseMove = OnMouseMove
+Sub OnMouseDown
+  X1 = GraphicsWindow.MouseX
+  Y1 = GraphicsWindow.MouseY
+  GraphicsWindow.BrushColor = GraphicsWindow.GetRandomColor()
+  GraphicsWindow.FillRectangle(400, 100, 200, 100)
+EndSub
+Sub OnMouseUp
+  GraphicsWindow.BrushColor = "Yellow"
+  GraphicsWindow.FillRectangle(400, 100, 200, 100)
+EndSub
+Sub OnKeyDown
+  GraphicsWindow.Clear()
+  GraphicsWindow.FontSize = "30"
+  GraphicsWindow.BrushColor = "Purple"
+  GraphicsWindow.DrawBoundText(50, 50, 300 "Yippee ki-yay")
+EndSub
+Sub OnKeyUp
+  GraphicsWindow.FontSize = "30"
+  GraphicsWindow.BrushColor = "Green"
+  GraphicsWindow.DrawBoundText(50, 200, 300 "graphics are fun!")
+EndSub
+Sub OnMouseMove
+  X2 = GraphicsWindow.MouseX
+  Y2 = GraphicsWindow.MouseY
+  If (Mouse.IsLeftButtonDown) Then
+    GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+    GraphicsWindow.DrawText(X2, Y2, "Mouse is on the Move")
+  EndIf
+EndSub
+

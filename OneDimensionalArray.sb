@@ -1,0 +1,26 @@
+TextWindow.WriteLine("We are collecting people's favorite desserts.  Please tell us your 5 faves.")
+i = 0
+While i < 5
+  TextWindow.WriteLine("Please enter one of your favorite desserts: ")
+  Desserts[i] = TextWindow.Read()
+  i = i + 1
+EndWhile
+TextWindow.WriteLine("Enter 'Yes' if Would you like to see your favorite desserts?")
+Answer = TextWindow.Read()
+If Answer = "Yes" Then
+  TextWindow.WriteLine("Your favorite desserts are: ")
+  For i = 0 To 4
+    If i = 4 Then
+      TextWindow.WriteLine(Desserts[i])
+      Else
+      TextWindow.Write(Desserts[i] + ", ")
+     EndIf
+  EndFor    
+Else
+  TextWindow.WriteLine("Then I guess I get to eat them!")
+EndIf
+  
+  
+    
+    
+    

@@ -1,0 +1,10 @@
+TextWindow.WriteLine("Which do you like better, running or hiking?")
+TextWindow.WriteLine("Enter 1 for running or 2 for hiking: ")
+athlete = TextWindow.Read()
+If (athlete = 1) Then
+  TextWindow.WriteLine("Runner")
+ElseIf (athlete = 2) Then
+  TextWindow.WriteLine("Hiker")
+Else
+  TextWindow.WriteLine("Neither")
+EndIf 

@@ -1,0 +1,9 @@
+animal = "giraffe" 
+i = 0
+While i < Text.GetLength(animal)
+  TextWindow.WriteLine("Animal is " + animal)
+  i = i + 1
+EndWhile
+For x = 1 To 20
+  TextWindow.WriteLine("X is " + X)
+ Endfor

@@ -1,0 +1,10 @@
+GraphicsWindow.DrawEllipse(50, 100, 200, 300)
+GraphicsWindow.BrushColor = "Purple"
+GraphicsWindow.FillEllipse(400, 50, 40, 140)
+GraphicsWindow.BrushColor = "Green"
+GraphicsWindow.FillTriangle(490,300, 400, 400, 550, 400)
+GraphicsWindow.BrushColor = "Yellow"
+GraphicsWindow.FillRectangle(20, 10, 100, 50)
+GraphicsWindow.BrushColor = "Pink"
+Triangle = Shapes.AddTriangle(550, 30, 500, 60, 600, 60)
+Shapes.Animate(Triangle, -300, 40, 1000)

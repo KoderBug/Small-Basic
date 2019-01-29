@@ -1,0 +1,16 @@
+TextWindow.Write("Please enter the number of kids going to Skate City: ")
+kids = TextWindow.Read()
+remainder = Math.Remainder(kids,2)
+If (kids < 30) Then
+  TextWindow.WriteLine("Not enough kids to make event profitable")
+ElseIf (kids > 80) Then
+  TextWindow.WriteLine("Too many kids for busses.")
+ElseIf (remainder = 0) Then
+  TextWindow.WriteLine("Split kids evenly between busses.")
+Else
+  TextWindow.WriteLine("Bus A gets extra kid.")
+EndIf
+
+TextWindow.Write("Please enter the number of skittles to share: ")
+skittles = TextWindow.Read()
+TextWindow.WriteLine("Each kid gets no more than " + Math.Ceiling(skittles/kids) + " skittle(s) each.")

@@ -1,0 +1,21 @@
+SportPlayers["Soccer"]["Athlete"] = "David Beckham
+SportPlayers["Football"]["Athlete"] = "Case Keenum"
+SportPlayers["Tennis"]["Athlete"] = "Serena Williams"
+SportPlayers["Golf"]["Athlete"] = "Jordan Spieth"
+SportPlayers["Lacrosse"]["Athlete"] = "Paul Rabil"
+SportPlayers["Baseball"]["Athlete"] = "Kyle Freeland"
+SportPlayers["Hockey"]["Athlete"] = "Joe Sakic"
+SportPlayers["Skiing"]["Athlete"] = "Lindsay Vonn"
+SportPlayers["Snowboarding"]["Athlete"] = "Shaun White"
+Continue = "Yes"
+While Continue = "Yes" 
+  TextWindow.Write("Enter a sport to see a top athlete that plays that sport: ")
+  Sport = TextWindow.Read()
+  TextWindow.WriteLine("A top athlete in " + Sport + " is " + SportPlayers[Sport]["Athlete"])
+  TextWindow.WriteLine("Enter 'Yes' to continue or 'Done' to end")
+  Continue = TextWindow.Read()
+EndWhile
+TextWindow.WriteLine("See you next time!")
+
+
+

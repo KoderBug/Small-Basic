@@ -1,0 +1,6 @@
+A = 100
+While A > 0
+  TextWindow.WriteLine(A)
+  Program.Delay(100)
+  A = A - 1
+ EndWhile
